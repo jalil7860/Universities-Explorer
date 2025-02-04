@@ -60,9 +60,10 @@ let url = "https://cors-anywhere.herokuapp.com/http://universities.hipolabs.com/
 
       async function getData(country) {
         try {
-          const request = await axios.get(url + encodeURIComponent(country));
+          const request = await axios.get(`/api/universities?country=${encodeURIComponent(country)}`);
           return request.data;
         } catch (err) {
-          throw new Error("Failed to fetch data. Please try again.");
+          console.error("Proxy Error:", err);
+          throw new Error('Failed to fetch data. Please try again.');
         }
       }
