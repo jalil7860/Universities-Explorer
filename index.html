@@ -25,9 +25,14 @@
       <div class="search-container">
         <div class="input-wrapper">
           <i class="fas fa-search input-icon"></i>
-          <input type="text" id="Input" placeholder="Enter country name..." />
+          <input type="text" id="Input" placeholder="Search Any country" />
+          <div id="autocomplete-results"></div>
         </div>
         <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+      </div>
+      <div id="search-history">
+        <h3>Search History</h3>
+        <div id="history-items"></div>
       </div>
 
       <div class="loading">
@@ -35,8 +40,19 @@
       </div>
 
       <div class="list-container">
+        <div id="skeleton-loading" style="display: none;">
+          <div class="skeleton-card">
+            <div class="skeleton-text skeleton-loading"></div>
+            <div class="skeleton-text-sm skeleton-loading"></div>
+            <div class="skeleton-text-sm skeleton-loading"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-text skeleton-loading"></div>
+            <div class="skeleton-text-sm skeleton-loading"></div>
+            <div class="skeleton-text-sm skeleton-loading"></div>
+          </div>
+        </div>
         <ul id="list"></ul>
-      </div>
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
