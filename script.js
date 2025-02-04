@@ -1,4 +1,4 @@
-const url = "https://universities.hipolabs.com/search?country=";
+let url = "https://cors-anywhere.herokuapp.com/http://universities.hipolabs.com/search?country=";
       const btn = document.getElementById("searchBtn");
       const loading = document.querySelector(".loading");
       const listContainer = document.querySelector(".list-container");
