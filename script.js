@@ -1,4 +1,4 @@
-const url = "http://universities.hipolabs.com/search?country=";
+const url = "https://universities.hipolabs.com/search?country=";
       const btn = document.getElementById("searchBtn");
       const loading = document.querySelector(".loading");
       const listContainer = document.querySelector(".list-container");
