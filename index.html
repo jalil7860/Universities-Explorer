@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universities Explorer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/0bedb36413.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Global University Explorer</h1>
+        <p class="subtitle">Discover Higher Education Institutions Worldwide</p>
+      </header>
+
+      <div class="search-container">
+        <div class="input-wrapper">
+          <i class="fas fa-search input-icon"></i>
+          <input type="text" id="Input" placeholder="Enter country name..." />
+        </div>
+        <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+      </div>
+
+      <div class="loading">
+        <i class="fas fa-spinner fa-spin"></i> Searching universities...
+      </div>
+
+      <div class="list-container">
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </body>
+</html>
