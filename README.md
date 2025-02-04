@@ -18,7 +18,7 @@ The **Universities Explorer System** allows users to search for a country and vi
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/universities-explorer.git
+   git clone https://github.com/jalil7860/Universities-Explorer
    ```
 
 2. Navigate to the project directory:
